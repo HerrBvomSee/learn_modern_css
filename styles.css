@@ -1,0 +1,39 @@
+/* flex container */
+ul {
+  background-color: lightslategray;
+  padding: 20px;
+  display: flex;
+}
+
+/* flex items */
+li {
+  /* display: inline-block; */
+  list-style: none;
+  color: royalblue;
+  background-color: azure;
+  padding: 10px;
+  margin: 20px;
+  width: 100px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: column nowrap; */
+  /* flex-flow is combination of wrap and direction */
+  
+}
+
+section {
+  width: 20rem;
+  background-color: lightslategray;
+  padding: 1.5rem;
+  margin: 1rem;
+  color: rgb(33, 48, 175);
+}
+
+div.content {
+  background-color: aqua;
+  padding: 1rem;
+}
