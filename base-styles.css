@@ -1,0 +1,135 @@
+* {
+  margin  : 0;
+  padding : 0;
+}
+
+body {
+  color       : #444444;
+  font-family : "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height : 1.5em;
+}
+
+.container {
+  width  : 700px;
+  margin : auto;
+}
+
+.main-header {
+  background-color : gainsboro;
+  padding          : 20px 40px;
+  margin-bottom    : 60px;
+  height           : 80px;
+}
+
+.post-header {
+  margin-bottom : 30px;
+}
+
+aside {
+  background-color : gainsboro;
+  padding          : 50px 0;
+  border-top       : 5px solid cadetblue;
+  border-bottom    : 5px solid cadetblue;
+  width            : 500px;
+}
+
+article {
+  margin-bottom : 60px;
+}
+
+/* applies only when p is really the first paragraph item in the article */
+article p:first-child {
+  color : rebeccapurple;
+}
+
+h1, h2, h3 {
+  color : dodgerblue;
+}
+
+h1 {
+  font-size      : 32px;
+  text-transform : uppercase;
+}
+
+h2 {
+  font-size     : 26px;
+  text-align    : center;
+  margin-bottom : 30px;
+}
+
+h3 {
+  font-size     : 21px;
+  margin-bottom : 20px;
+}
+
+p {
+  font-size     : 18px;
+  line-height   : 1.3em;
+  margin-bottom : 15px;
+}
+
+ul, ol {
+  margin-left   : 50px;
+  margin-bottom : 20px;
+}
+
+/* list styling */
+li {
+  margin-bottom : 10px;
+}
+
+li:first-child {
+  font-weight : bold;
+}
+
+li:last-child {
+  font-style    : italic;
+  margin-bottom : 0;
+}
+
+li:nth-child(even) {
+  color : cadetblue;
+}
+
+
+/* Link styling */
+a:link {
+  color           : darkorange;
+  text-decoration : none;
+}
+
+a:visited {
+  color : firebrick;
+}
+
+a:hover {
+  color           : orangered;
+  font-weight     : bold;
+  text-decoration : underline dotted;
+}
+
+a:active {
+  color : rebeccapurple;
+}
+
+/* Conflict resolving */
+#copyright {
+  color : red;
+}
+
+.copyright {
+  color : blue;
+}
+
+.text {
+  color : yellow;
+}
+
+footer p {
+  color : cadetblue;
+}
+
+.post-image {
+  width  : 100%;
+  height : auto;
+}

@@ -1,28 +1,72 @@
-/* flex container */
+body {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  /* flex-flow: column nowrap; */
+}
+
 ul {
   background-color: lightslategray;
   padding: 20px;
-  display: flex;
+  /* height: 200px; */ /* uncomment for align-items property */
 }
 
 /* flex items */
 li {
-  /* display: inline-block; */
   list-style: none;
   color: royalblue;
   background-color: azure;
   padding: 10px;
   margin: 20px;
   width: 100px;
+  text-align: center;
 }
 
-body {
+li:first-child {
+    padding: 0px;
+}
+
+ul.mainbar {
+  display: flex;
+  flex-direction: row;
+  /* 
+  flex-direction: column;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse; 
+  */
+
+  /* flex-flow is combination of wrap and direction */
+  /* flex-flow: wrap row-reverse; */
+
+  flex-wrap: nowrap;
+  /*   
+  flex-wrap: wrap;
+  flex-wrap: wrap-reverse; 
+  */
+
+  justify-content: space-evenly;
+  /*
+  justify-content: space-around;
+  justify-content: space-between;
+  justify-content: center;
+  justify-content: flex-start;
+  justify-content: flex-end;
+  */
+
+  align-items: center;
+  /*
+  align-items: stretch;
+  align-items: flex-start;
+  align-items: flex-end; 
+  */
+
+}
+
+div.somesection {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* flex-flow: column nowrap; */
-  /* flex-flow is combination of wrap and direction */
-  
+  justify-content: space-around;
 }
 
 section {
