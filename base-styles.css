@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  width  : 700px;
+  width  : 1200px;
   margin : auto;
 }
 
@@ -19,11 +19,11 @@ body {
   background-color : gainsboro;
   padding          : 20px 40px;
   margin-bottom    : 60px;
-  height           : 80px;
 }
 
 .post-header {
   margin-bottom : 30px;
+  float         : left;
 }
 
 aside {
@@ -48,7 +48,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size      : 32px;
+  font-size      : 28px;
   text-transform : uppercase;
 }
 
@@ -179,4 +179,53 @@ h2::after {
   position         : absolute;
   top              : -15px;
   right            : -20px;
+}
+
+/* Floats */
+.author-image {
+  float         : left;
+  margin-bottom : 20px;
+}
+
+.author {
+  float       : left;
+  margin-top  : 12px;
+  margin-left : 20px;
+  font-style  : italic;
+  font-size   : medium;
+}
+
+h1 {
+  float : left;
+}
+
+nav {
+  float : right;
+}
+
+.clear {
+  clear : both;
+}
+
+/* clear float layout! */
+.clearfix::after {
+  clear   : both;
+  content : "";
+  display : block;
+}
+
+
+article {
+  float : left;
+  width : 825px;
+}
+
+aside {
+  width : 300px;
+  float : right;
+}
+
+footer {
+  background-color : blue;
+  clear            : both;
 }
