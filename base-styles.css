@@ -1,6 +1,7 @@
 * {
-  margin  : 0;
-  padding : 0;
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
 }
 
 body {
@@ -28,10 +29,14 @@ body {
 
 aside {
   background-color : gainsboro;
-  padding          : 50px 0;
+  padding          : 50px 40px;
   border-top       : 5px solid cadetblue;
   border-bottom    : 5px solid cadetblue;
-  width            : 500px;
+}
+
+.related {
+  list-style  : none;
+  margin-left : 0;
 }
 
 article {
@@ -62,6 +67,10 @@ h2 {
 h3 {
   font-size     : 21px;
   margin-bottom : 20px;
+}
+
+h4 {
+  margin-bottom : 30px;
 }
 
 p {

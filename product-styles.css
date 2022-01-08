@@ -1,6 +1,7 @@
 * {
-  margin  : 0;
-  padding : 0;
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
 }
 
 body {
@@ -16,28 +17,50 @@ body {
 .product-box {
   border   : #444444 2px solid;
   margin   : 40px auto;
-  width    : 500px;
+  width    : 645px;
   position : relative;
 }
 
 .item-image {
-  width  : 33%;
-  height : 100%;
+  width        : 200px;
+  height       : 100%;
+  float        : left;
+  margin-right : 20px;
+}
+
+.mid-part {
+  float        : left;
+  width        : 200px;
+  margin-right : 20px;
+}
+
+.detail-part {
+  float : left;
+  width : 200px;
 }
 
 .price {
+  padding-top   : 10px;
   color         : darkblue;
   font-weight   : bold;
   font-size     : larger;
   margin-bottom : 0;
+  float         : left;
 }
 
 .shipping {
+  padding-top    : 10px;
   text-transform : uppercase;
   font-weight    : lighter;
   font-size      : smaller;
   color          : darkgrey;
   margin-bottom  : 20px;
+  /* margin-top     : 20px; */
+  float          : right;
+}
+
+.description {
+  clear : both;
 }
 
 ol, ul {
@@ -62,7 +85,7 @@ a {
 
 .detail-title {
   text-transform : uppercase;
-  margin-top     : 30px;
+  padding-top    : 10px;
 }
 
 .detail-list {
